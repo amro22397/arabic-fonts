@@ -103,7 +103,7 @@ const page = () => {
       <div className="flex flex-wrap gap-24">
 
         {arabicFonts.map((font, index) => (
-          <div className="flex flex-col gap-2">
+          <div key={index} className="flex flex-col gap-2">
           <h1 className="text-3xl" style={{fontFamily: `${font.phontName}`}}>
             شكل الخط
           </h1>
