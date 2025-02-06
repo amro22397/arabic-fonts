@@ -88,11 +88,14 @@ const page = () => {
     <div className='mx-8 my-16 flex gap-10 flex-col'>
       <h1 className="flex text-5xl" style={{fontFamily: "Tajawal"}}>الخطوط العربية</h1>
 
-      <p className="w-[700px] text-lg">أدخل على Google Fonts
-        اضف الخط لقائمة الخطوط التي تريدها
-        ثم انسخ الكود الخاص بالخطوط (بعد اضافة كل الخطوط التي تريدهها)
-        واضف الكود لملف layout.tsx على سبيل المثال
+      <p className="w-[700px] text-lg mb-1">أدخل على Google Fonts
+        اضف الخط التي تريده لقائمة الخطوط التي تريدها <br />
+        ثم انسخ الكود الخاص بالخطوط (بعد اضافة كل الخطوط التي تريدهها) <br />
+        واضف الكود لملف layout.tsx داخل تاق {`<head></head>`} على سبيل المثال
         في Next Js
+        <br />
+
+        او انسخ الكود في اي ملف CSS مثل الرئيسي في Next js وهو Global.css
       </p>
       
       <p className='text-md hidden'
@@ -108,7 +111,7 @@ const page = () => {
             شكل الخط
           </h1>
 
-          <span className="text-2xl" style={{fontFamily: "Arial"}}>{font.phontName}</span>
+          <span className="text-2xl" style={{fontFamily: `${font.phontName}`}}>{font.phontName}</span>
         </div>
         ))}
       
