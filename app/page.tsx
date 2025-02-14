@@ -86,7 +86,7 @@ const page = () => {
 
   return (
     <div className='mx-8 my-16 flex gap-10 flex-col'>
-      <h1 className="flex text-5xl" style={{fontFamily: "Tajawal"}}>الخطوط العربية</h1>
+      <h1 className="flex text-5xl" style={{fontFamily: "Readex Pro"}}>الخطوط العربية</h1>
 
       <p className="w-[700px] text-lg mb-1">أدخل على Google Fonts
         اضف الخط التي تريده لقائمة الخطوط التي تريدها <br />
@@ -103,6 +103,13 @@ const page = () => {
         الكود الخاص بالخطوط
       <Link href="/font-code" className='hover:underline mr-3 ' >أضغط هنا</Link>
       </p>
+
+
+      <Link href={`/english-fonts`} className='hover:underline text-indigo-600 text-2xl' >
+      Go to english fonts
+      </Link>
+
+
       <div className="flex flex-wrap gap-24">
 
         {arabicFonts.map((font, index) => (
