@@ -170,7 +170,7 @@ const page = () => {
       <p className="text-md hidden">
         الكود الخاص بالخطوط
         <Link href="/font-code" className="hover:underline mr-3 ">
-          أضغط هنا
+          أضغط هنا 
         </Link>
       </p>
 
